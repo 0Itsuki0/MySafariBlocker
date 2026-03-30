@@ -24,7 +24,6 @@ struct ContentBlockerRuleListView: View {
     var body: some View {
         List {
             ForEach(Array(rules.enumerated()), id: \.offset) { _, rule in
-
                 Button(action: {
                     self.selectedBlockerRule = rule
                     self.showingEditor = true
@@ -76,10 +75,13 @@ struct ContentBlockerRuleListView: View {
                     "No Rules Added",
                     systemImage: "hand.raised.fill"
                 )
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(.gray.opacity(0.2))
             }
         })
         .contentMargins(.top, 16)
         .navigationTitle("Content Blocker Rules")
+        .navigationSubtitle("Create your own from scratch!")
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
