@@ -24,4 +24,4 @@ If you need any help on the app, please open an issue or contact me at [itsuki.e
 ![](./contentBlocker.gif)
 
 
-Please also check out my blog [Swift: Dynamic Safari Content Blocker]() for more details.
+Please also check out my blog [Swift: Dynamic Safari Content Blocker](https://medium.com/@itsuki.enjoy/swift-dynamic-safari-content-blocker-d5f7760a60ac) for more details.
